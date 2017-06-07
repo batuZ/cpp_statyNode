@@ -1,0 +1,2 @@
+﻿main.obj : error LNK2019: 无法解析的外部符号 "void __cdecl test(int *)" (?test@@YAXPEAH@Z)，该符号在函数 main 中被引用
+C:\code\cpp_statyNode\x64\Debug\类型转换.exe : fatal error LNK1120: 1 个无法解析的外部命令
