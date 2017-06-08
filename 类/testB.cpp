@@ -2,11 +2,6 @@
 
 #include "testA.h"
 
-testB::testB()
-{
-}
-
-
-testB::~testB()
+testB::testB(char str) : m_myChar(str)
 {
 }
