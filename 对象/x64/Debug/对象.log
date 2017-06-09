@@ -1,0 +1,4 @@
+﻿  main.cpp
+e:\code\cpp_statynode\对象\main.cpp(40): warning C4091: “static ”: 没有声明变量时忽略“onlyOne”的左侧
+  对象.vcxproj -> E:\code\cpp_statyNode\x64\Debug\对象.exe
+  对象.vcxproj -> E:\code\cpp_statyNode\x64\Debug\对象.pdb (Partial PDB)

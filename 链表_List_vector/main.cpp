@@ -55,11 +55,23 @@ void testList() {
 	//声明i为迭代器   
 	MyList::iterator i;					//正向迭代器 ++为下一个成员
 	MyList::reverse_iterator rev_i;		//反向 ++为上一个成员
+
+	//遍历表
 	//i是指向成员的指针
 	for (MyList::iterator itm = aList3.begin(); itm != aList3.end(); ++itm)
 	{
 		cout << *itm << endl;
 	}
+
+	for (auto& itm : aList3) {
+		cout << itm << endl;
+	}
+
+	for each (auto itm in aList3)
+	{
+		cout << itm << endl;
+	}
+
 }
 
 /*
@@ -90,7 +102,11 @@ void testVector() {
 	c.clear();						//移除容器中所有数据。
 	c.empty();						//判断容器是否为空。
 	c.erase(c.end());				// 删除pos位置的数据
+<<<<<<< HEAD
 	c.erase(c.begin(), c.end ());	//删除[beg, end)区间的数据
+=======
+	c.erase(c.begin(), c.end());//删除[beg, end)区间的数据
+>>>>>>> 798fdeda1bd862f24e164fbf2068336c810f1cc1
 	c.front();						//传回第一个数据。
 	c.insert(c.begin(), 3.1f);		//在pos位置插入一个elem拷贝
 	c.pop_back();					//删除最后一个数据。
@@ -109,9 +125,18 @@ void testVector() {
 	c.rend();						//传回一个逆向队列的最后一个数据的下一个位置。
 	c.~vector();					// 销毁所有数据，释放内存。   
 	c[3] = 44.44f;
+
+	for (int i = 0; i < c.size(); i++)
+	{
+		cout << c[i] << endl;
+	}
+	for each (auto itm in c)
+	{
+		cout << itm << endl;
+	}
 }
 int main(void) {
-	testList();
+
 	return 0;
 }
 

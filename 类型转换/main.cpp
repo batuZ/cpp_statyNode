@@ -21,14 +21,14 @@ using namespace std;
 	dynamic_cast : 向下的安全类型转换
 */
 
-void test(int* a);
+//void test(int* a);
 
 int main(void) {
 	int const co = 55;
 	const int* pco = &co;
 
 	//把 const int* 转换为 int*
-	test(const_cast<int*>(pco));
+	//test(const_cast<int*>(pco));
 
 	//类型转换
 	float flt = 3.14f;
