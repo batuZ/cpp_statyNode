@@ -102,11 +102,8 @@ void testVector() {
 	c.clear();						//移除容器中所有数据。
 	c.empty();						//判断容器是否为空。
 	c.erase(c.end());				// 删除pos位置的数据
-<<<<<<< HEAD
 	c.erase(c.begin(), c.end ());	//删除[beg, end)区间的数据
-=======
 	c.erase(c.begin(), c.end());//删除[beg, end)区间的数据
->>>>>>> 798fdeda1bd862f24e164fbf2068336c810f1cc1
 	c.front();						//传回第一个数据。
 	c.insert(c.begin(), 3.1f);		//在pos位置插入一个elem拷贝
 	c.pop_back();					//删除最后一个数据。
