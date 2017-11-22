@@ -17,4 +17,11 @@ enum class Options {
 };
 Options o = Options::One;
 
-int main(void) {}
+int main(void) {
+	Options o = Options::One;
+	MyEnum aTest = my3;
+	MyEnum aTest1 = my3;
+	if (aTest1 > aTest)
+	{
+	}
+}
