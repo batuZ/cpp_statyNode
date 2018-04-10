@@ -95,6 +95,7 @@ Application::EnableVisualStyles();
 Application::Run(gcnew MyForm());
 4、本地window调试器
 
+
 设置不弹出控制台窗口
 1、工程->属性->配置属性->链接器->系统->子系统-> [窗口(/SUBSYSTEM:WINDOWS)]
 2、工程->属性->配置属性->链接器->高级->入口点-> [main]
