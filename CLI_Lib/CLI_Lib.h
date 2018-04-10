@@ -85,3 +85,17 @@ namespace CLI_Lib {
 *  实例解析C++/CLI之开篇
 *  https://blog.csdn.net/xieqidong/article/details/2244641
 */
+
+/*
+CLR创建winForm窗体
+1、创建一个CLR控制台应用程序
+2、头文件夹右键->添加新建项->UI->Windows窗体
+3、main函数增加：
+Application::EnableVisualStyles();
+Application::Run(gcnew MyForm());
+4、本地window调试器
+
+设置不弹出控制台窗口
+1、工程->属性->配置属性->链接器->系统->子系统-> [窗口(/SUBSYSTEM:WINDOWS)]
+2、工程->属性->配置属性->链接器->高级->入口点-> [main]
+*/
