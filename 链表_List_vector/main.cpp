@@ -51,7 +51,7 @@ void testList() {
 	aList3.pop_front();					//干掉第一个
 	aList3.erase(++aList3.begin());		//干掉前面第3个
 	aList1.size();						//成员数
-
+	
 	//声明i为迭代器   
 	MyList::iterator i;					//正向迭代器 ++为下一个成员
 	MyList::reverse_iterator rev_i;		//反向 ++为上一个成员

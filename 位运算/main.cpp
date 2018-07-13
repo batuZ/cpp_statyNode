@@ -1,5 +1,4 @@
-﻿#include <iostream>
-using namespace std;
+﻿
 /*
 
 			常用方法：
@@ -12,10 +11,29 @@ using namespace std;
 							a & 1 = 1 奇数		0101 & 0001 = 0001
 
 			4、判断一个正整数x是不是2的n次幂
-				x = 512 
+				x = 512
 				if ((x&(x - 1)) == 0 && x != 0){ true }
 
-			5、交换两变量的值（感觉没啥卵用）
+			5、用一个字节表示四个选项的16种组合
+				0000 ：四个选项都为false，int值为0
+				0010 ：第二个选项为true，int值为2
+				1000 ：第四个选项为true，int值为8
+				...
+
+				获取目标值V的第n位的二进制值：res = (V >> n) & 1;
+				设置目标值V的第n位的二进制值为a：V^=(V&(1<<n)) ^ (a<<n)
+
+				//获取 val 第三位的二进制值 为 1
+				int val = 2;
+				int res = (val >> 2) & 1;
+
+				//设置 val （2 : 0010）中第三位为 1 (6 : 0110)
+				val ^= (val&(1 << 2)) ^ (1 << 2);
+
+				注：从低位到高位算,从第0位开始算，示例在main()中
+
+
+			6、交换两变量的值（感觉没啥卵用）
 			void swap(int x , int y){
 			 	x ^= y;
 			  	y ^= x;
@@ -64,9 +82,17 @@ using namespace std;
 			   8、b = 1111-1111时，a ^ b = ~a		 0101 ^ 1111 = 1010
 
 */
+#include <iostream>
+using namespace std;
+
 int main()
 {
+	//获取 val 第三位的二进制值 为 1
+	int val = 2;
+	int res = (val >> 2) & 1;
 
+	//设置 val （2 : 0010）中第三位为 1 (6 : 0110)
+	val ^= (val&(1 << 2)) ^ (1 << 2);
 
 	return 0;
 }
